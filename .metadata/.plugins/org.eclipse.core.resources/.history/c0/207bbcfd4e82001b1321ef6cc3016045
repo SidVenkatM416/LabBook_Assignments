@@ -1,0 +1,30 @@
+package Lab_01;
+
+import java.util.Scanner;
+
+public class Exp01 {
+
+	int i,num;
+	int sum=0;
+	
+	public int cubes(){
+		
+	Scanner scan=new Scanner(System.in);
+	num =scan.nextInt();
+	for(int i=1;i<=num;i++)
+	{
+		sum=sum+(i*i*i);
+	}
+		System.out.println(sum);
+	scan.close();
+	return num;
+	}
+	
+	public static void main(String[] args) {
+		
+		Exp01 s=new Exp01();
+		System.out.println("enter a number : ");
+		s.cubes();
+	}
+
+}

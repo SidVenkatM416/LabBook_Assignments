@@ -1,0 +1,34 @@
+package Lab_05;
+
+import java.util.Scanner;
+
+public class Exp03 extends Exception {
+	 
+	 public Exp03(String s) {
+	  System.out.println(s);
+	 }
+
+	public static void main(String[] args) {
+		String s=new String();
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Employee name:");
+		s=sc.next();
+		
+		double sal;
+		System.out.println("Enter Employee salary:");
+		sal=sc.nextDouble();
+		
+		try {
+			if(sal<10000)
+				System.out.println("Salary is below 10000");
+			else
+				System.out.println("Salary greater than 10000");
+		}
+		
+		catch (Exception e) {
+			System.out.println(e);
+		}
+		sc.close();
+	}
+
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+G:\capG\eclipse\Lab_Assignments\.metadata\.plugins\org.eclipse.jdt.core
+1281376111.index
+3771541681.index
+3687421330.index

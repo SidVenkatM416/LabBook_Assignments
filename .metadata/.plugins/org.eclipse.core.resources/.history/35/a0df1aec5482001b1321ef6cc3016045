@@ -1,0 +1,32 @@
+package Lab_01;
+
+import java.util.Scanner;
+
+public class Exp07 {
+
+	public static boolean checkNumber(int number) {
+		
+		int currentDigit = 0;
+	    boolean flag = false;
+	    
+	       while(number>0){  
+			if(currentDigit <= number % 10){
+	               flag = true;
+	               break;
+	           }
+	           currentDigit = number % 10;
+	           number = number/10;
+	       }
+		return flag;
+	}
+	
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+	    System.out.println("Enter a number : ");
+	    int number = scan.nextInt();
+	    System.out.print(checkNumber(number));
+	    scan.close();
+	}
+
+}

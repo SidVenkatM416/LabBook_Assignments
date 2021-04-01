@@ -1,0 +1,28 @@
+package Lab_02;
+
+import java.util.Scanner;
+
+public class Exp03 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("Enter length of array ");
+		int num=sc.nextInt();
+		
+		int ar[]=new int[num];
+		
+		System.out.println("Enter the Elements");
+		
+		for(int y=0;y<num;y++)
+		{
+			ar[y]=sc.nextInt();
+		}
+		
+		Exp03 obj=new Exp03();
+		obj.getSorted(ar, num);	
+
+	}
+
+}

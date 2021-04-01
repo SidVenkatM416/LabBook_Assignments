@@ -1,0 +1,19 @@
+package Lab_05;
+
+public class Exp01 {
+	
+	class AgeException extends Exception {
+		 
+		private static final long serialVersionUID = 1L;
+
+		public AgeException(String s) {
+		  System.out.println(s);
+		 }
+	}
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
